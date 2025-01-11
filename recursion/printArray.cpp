@@ -2,20 +2,31 @@
 #include<vector>
 using namespace std;
 
-void printArray(vector<int>nums){
-    if(nums.size()==0){
+// void printArray(vector<int>nums){
+//     if(nums.size()==0){
+//         return;
+//     }
+//     cout << nums[nums.size()-1] << " ";
+//     nums.pop_back();
+//     printArray(nums);
+
+// }
+void printArray(int arr[], int n, int i){
+    if(i>=n){
         return;
     }
-    cout << nums[nums.size()-1] << " ";
-    nums.pop_back();
-    printArray(nums);
+    cout << arr[i]<< " ";
+    printArray(arr, n, i+1);
 
 }
 
 int main(){
-    vector<int> nums({1,2,3,45,6,7});
     
+    int arr[5] = {10, 20, 30, 40 ,50};
+    int n =5;
+    int i = 0;
+    printArray(arr, n, i);
 
-    printArray(nums);
-    
+
+    return 0;
 }
