@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 
-void maxSum(vector<int>& arr, int sum, int i, int& maxi){
+void maxSum(vector<int>& arr, int sum, int i, int& maxi){ //Must to pass reference variable
     // Base case
     if(i >= arr.size()){
         maxi = max(maxi, sum); //maxi update
