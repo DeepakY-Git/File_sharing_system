@@ -26,11 +26,10 @@ int solve(int n, int x, int y, int z){
     // if(n-z >= 0){
     //     c = solve(n-z, x, y, z) +1; // + 1 is of step with segment z
     // }
+    
     int a = solve(n-x, x, y, z) + 1;
     int b = solve(n-y, x, y, z) + 1;
     int c = solve(n-z, x, y, z) + 1;
-
-    
 
     int ans = max(a, max(b, c));
     return ans;
