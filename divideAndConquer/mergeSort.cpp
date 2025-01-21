@@ -49,7 +49,7 @@ void merge(int* arr, int s, int e){
 }
 void mergeSort(int* arr, int s, int e){
     //  Base Case
-    //s==e --> single element
+    //s == e --> single element
     // s > e --> invalid array
     if(s>=e){
         return;
@@ -67,12 +67,15 @@ void mergeSort(int* arr, int s, int e){
 }
 
 int main(){
-    int arr[] = {4,5,13,2,21};
-    int n = 5;
+    int arr[] = {4,5,13,2,21,2,2,2};
+    int n = 8;
     int s = 0;
     int e = n - 1;
+
+    //calling mergeSort function
     mergeSort(arr, s, e);
 
+    //printing array
     for(int i = 0; i<n; i++){
         cout << arr[i] << " ";
     }
