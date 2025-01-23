@@ -4,11 +4,11 @@
 using namespace std;
 
 int solve(vector<int> arr, int target){
-    // Base case
+    // Base case when target is 0
     if(target == 0){
         return 0;
     }
-
+    // Base Case when target is -ve not possible to achieve
     if(target < 0){
         return INT_MAX;
     }
