@@ -67,14 +67,13 @@ void mergeSort(int* arr, int s, int e){
 }
 
 int main(){
-    int arr[] = {4,4,5,5,13,2,21,2,2,2};
-    int n = 10;
+    int arr[] = {4,4,5,5,13,12,2,21,2,2,2};
+    int n = 11;
     int s = 0;
     int e = n - 1;
 
     //calling mergeSort function
     mergeSort(arr, s, e);
-
     //printing array
     for(int i = 0; i<n; i++){
         cout << arr[i] << " ";
@@ -82,3 +81,12 @@ int main(){
     cout<<endl;
     return 0;
 }
+
+//----------------------Time Complexity---------------------------------
+/* 
+T(n) = base case + left call + right call + merge call
+T(n) = k1 + T(n/2) + T(n/2) + n*k --> 5 while loop in merge call
+T(n) = k1 + 2T(n/2) + n*K
+T(n) = 2T(n/2) + n*k
+T(n) = nlog(n)
+*/
