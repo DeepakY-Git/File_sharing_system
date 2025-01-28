@@ -45,7 +45,7 @@ void merge(int* arr, int s, int e){
     while(rightIndex < len2){
         arr[mainArrayIndex++] = right[rightIndex++];
     }
-    //todp : delete left and right newly created arrays
+    //todo : delete left and right newly created arrays
 }
 void mergeSort(int* arr, int s, int e){
     //  Base Case
