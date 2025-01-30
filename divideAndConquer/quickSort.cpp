@@ -61,8 +61,8 @@ void quickSort(int arr[], int s, int e){
 }
 
 int main(){
-    int arr[] = {8,1,1,5,3,3,4,20,50,30};
-    int n = 10;
+    int arr[] = {12,3,6,5,4,8,1,1,5,3,3,4,20,50,30};
+    int n = 15;
 
     int s = 0;
     int e = n-1;
