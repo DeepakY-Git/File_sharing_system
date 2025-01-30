@@ -76,3 +76,9 @@ int main(){
 }
 
 
+//---------------------------Time Complexity-------------------------
+/*
+Average Case : O(nlog(n))
+Worst Case : O(N^2) 
+*/
+
