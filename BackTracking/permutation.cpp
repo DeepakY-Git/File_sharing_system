@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void printPermutation(string& str, int i){
+void printPermutation(string str, int i){
     //Base Case
     if(i>= str.length()){
         cout << str <<" ";
@@ -17,7 +17,7 @@ void printPermutation(string& str, int i){
         printPermutation(str, i+1);
 
         //Backtracking --> by reference str 
-        swap(str[i], str[j]);
+        // swap(str[i], str[j]);
     }
 }
 
