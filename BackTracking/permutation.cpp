@@ -16,7 +16,7 @@ void printPermutation(string& str, int i){
         //rec call
         printPermutation(str, i+1);
 
-        //Backtracking
+        //Backtracking --> by reference str 
         swap(str[i], str[j]);
     }
 }
